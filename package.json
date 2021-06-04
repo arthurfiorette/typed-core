@@ -1,6 +1,6 @@
 {
   "author": "Arthur Fiorette",
-  "name": "type-core",
+  "name": "typed-core",
   "version": "1.0.0",
   "license": "MIT",
   "main": "dist/index.js",
@@ -18,17 +18,17 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ArthurFiorette/type-core.ts.git"
+    "url": "git+https://github.com/ArthurFiorette/typed-core.ts.git"
   },
   "keywords": [
-    "type-core",
+    "typed-core",
     "typescript",
     "utility"
   ],
   "bugs": {
-    "url": "https://github.com/ArthurFiorette/type-core/issues"
+    "url": "https://github.com/ArthurFiorette/typed-core/issues"
   },
-  "homepage": "https://github.com/ArthurFiorette/type-core#readme",
+  "homepage": "https://github.com/ArthurFiorette/typed-core#readme",
   "devDependencies": {
     "@babel/cli": "^7.13.16",
     "@babel/core": "^7.14.0",
