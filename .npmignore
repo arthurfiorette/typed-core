@@ -6,7 +6,9 @@
 !package.json
 !.prettierrc
 !.eslintrc
+!.gitignore
+!.babelrc
 !LICENSE
 !tsconfig.json
-!/src/*
-!/dist/*
+!/src/**
+!/dist/**

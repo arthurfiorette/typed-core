@@ -1,6 +1,6 @@
 {
   "author": "Arthur Fiorette",
-  "name": "tscore",
+  "name": "type-core",
   "version": "1.0.0",
   "license": "MIT",
   "main": "dist/index.js",
@@ -18,17 +18,17 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ArthurFiorette/tscore.ts.git"
+    "url": "git+https://github.com/ArthurFiorette/type-core.ts.git"
   },
   "keywords": [
-    "tscore",
+    "type-core",
     "typescript",
     "utility"
   ],
   "bugs": {
-    "url": "https://github.com/ArthurFiorette/tscore/issues"
+    "url": "https://github.com/ArthurFiorette/type-core/issues"
   },
-  "homepage": "https://github.com/ArthurFiorette/tscore#readme",
+  "homepage": "https://github.com/ArthurFiorette/type-core#readme",
   "devDependencies": {
     "@babel/cli": "^7.13.16",
     "@babel/core": "^7.14.0",
