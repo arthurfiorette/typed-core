@@ -1,0 +1,14 @@
+# User specific content
+/.vscode
+.DS_Store
+/tests
+
+# Npm stuff
+/node_modules
+*.log
+
+# Compilated JS code
+/dist
+
+# Tests
+/coverage

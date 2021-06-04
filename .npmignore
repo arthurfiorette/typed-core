@@ -1,0 +1,12 @@
+# White-list approach
+
+*
+
+!README.md
+!package.json
+!.prettierrc
+!.eslintrc
+!LICENSE
+!tsconfig.json
+!/src/*
+!/dist/*
