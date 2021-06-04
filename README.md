@@ -41,6 +41,10 @@
   <i>An <b>utility</b> package for Typescript.</i>
 </p>
 
+## 📖 About
+
+This is an type focused library for Node and Typescript. More docs will be added later.
+
 ## ⬇️ Downloading
 
 This project is a Node module, so you can install it with **Npm** or **Yarn**:
