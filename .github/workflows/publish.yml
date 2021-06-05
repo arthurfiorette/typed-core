@@ -28,10 +28,10 @@ jobs:
           useLockFile: false
 
       - name: Test
-        run: npm test
+        run: npm run test
 
       - name: Build
-        run: npm build
+        run: npm run build
 
       - name: Publish to NPM
         run: npm publish --access public
