@@ -1,6 +1,6 @@
 export const VERSION = '1.1.1';
 
-export * as core from './core';
-export * as events from './events';
-export * as types from './types';
-export * as validator from './validator';
+export * as Core from './core';
+export * as Events from './events';
+export * as Types from './types';
+export * as Validator from './validator';
