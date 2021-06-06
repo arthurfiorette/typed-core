@@ -8,8 +8,14 @@ export interface EmptyEventType extends EventType<EmptyEventType> {}
 
 export type EventType<E = unknown> = {
   error: any;
-  newListener: { type: keyof EventType<E>; listener: EventListener<E[keyof E]> };
-  removeListener: { type: keyof EventType<E>; listener: EventListener<E[keyof E]> };
+  newListener: {
+    type: keyof EventType<E>;
+    listener: EventListener<E[keyof E]>;
+  };
+  removeListener: {
+    type: keyof EventType<E>;
+    listener: EventListener<E[keyof E]>;
+  };
 };
 
 export type EmitterOptions = {

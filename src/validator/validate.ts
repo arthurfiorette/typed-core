@@ -1,6 +1,14 @@
-import { FieldError, ValidationFunction, ValidationRecord, VerifierRecord } from './types';
+import {
+  FieldError,
+  ValidationFunction,
+  ValidationRecord,
+  VerifierRecord
+} from './types';
 
-export async function validate<T>(fields: T, validator: ValidationFunction<T>): Promise<FieldError[]> {
+export async function validate<T>(
+  fields: T,
+  validator: ValidationFunction<T>
+): Promise<FieldError[]> {
   const fieldErrors: FieldError[] = [];
   const parsers: VerifierRecord<T> = {};
   const validators: ValidationRecord<T> = {};
