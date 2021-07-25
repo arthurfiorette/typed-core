@@ -20,7 +20,6 @@ export class RecordLock<K extends string | symbol> {
           const result = await callback(...args);
           res(result);
         } catch (err) {
-          console.log('aaaaaa', err);
           rej(err);
         }
       });
