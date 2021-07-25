@@ -37,3 +37,8 @@ export type Function<A = any, B = any> = (a: A) => B;
  * Represents a function that accepts two arguments and produces a result.
  */
 export type BiFunction<A = any, B = any, C = any> = (a: A, b: B) => C;
+
+/**
+ * Represents a function that receive and returns nothing.
+ */
+export type Runnable = () => void;
