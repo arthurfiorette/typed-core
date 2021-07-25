@@ -6,12 +6,12 @@ export class RecordLock<K extends string | symbol> {
   acquire<R>(
     key: K,
     callback: (...args: any[]) => R | Promise<R>,
-    args: any[]
+    args?: any[]
   ): Promise<R>;
   acquire<R>(
     key: K,
     callback: (...args: any[]) => R | Promise<R> | void,
-    args: any[]
+    args: any[] = []
   ): Promise<R> | void {
     return new Promise<any>((res, rej) => {
       const record = this.records[key] || [];
@@ -20,6 +20,7 @@ export class RecordLock<K extends string | symbol> {
           const result = await callback(...args);
           res(result);
         } catch (err) {
+          console.log('aaaaaa', err);
           rej(err);
         }
       });
@@ -36,11 +37,7 @@ export class RecordLock<K extends string | symbol> {
     const record = this.records[key];
     while (record.length > 0) {
       const fn = record.shift();
-      try {
-        fn && (await fn());
-      } catch (e) {
-        console.error(e);
-      }
+      fn && (await fn());
     }
   }
 }

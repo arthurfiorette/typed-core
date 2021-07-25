@@ -8,11 +8,11 @@ export class SingleLock {
   acquire(callback: (...args: any[]) => void, args: any[]): void;
   acquire<R>(
     callback: (...args: any[]) => R | Promise<R>,
-    args: any[]
+    args?: any[]
   ): Promise<R>;
   acquire<R>(
     callback: (...args: any[]) => R | Promise<R> | void,
-    args: any[]
+    args: any[] = []
   ): Promise<R> | void {
     return new Promise<any>((res, rej) => {
       this.locks.push(async () => {
