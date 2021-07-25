@@ -1,16 +1,6 @@
 {
   "presets": ["@babel/preset-env", "@babel/typescript"],
-  "plugins": [
-    [
-     "@babel/plugin-transform-runtime",
-      {
-        "regenerator": true,
-        "corejs": 3
-      }
-    ],
-    "@babel/proposal-class-properties",
-    "@babel/proposal-object-rest-spread"
-  ],
+  "plugins": ["@babel/transform-runtime"],
   "comments": false,
-  "compact": true
+  "minified": true
 }
