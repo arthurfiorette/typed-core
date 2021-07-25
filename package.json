@@ -1,7 +1,7 @@
 {
   "author": "Arthur Fiorette",
   "name": "typed-core",
-  "version": "1.1.4",
+  "version": "1.2.0",
   "license": "MIT",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
