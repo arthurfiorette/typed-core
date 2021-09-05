@@ -59,7 +59,9 @@ npm i --save typed-core
 
 ## 💻 Contributing
 
-This is a small project, and I don't have any specific rules for contributions, you can modify anything, then make a pull-request and i'll analyze. Just be careful not to run away from the main idea of the package.
+This is a small project, and I don't have any specific rules for contributions, you can modify
+anything, then make a pull-request and i'll analyze. Just be careful not to run away from the main
+idea of the package.
 
 ## 📃 License
 
@@ -67,4 +69,5 @@ Licensed under the **MIT**. See [`LICENSE`](LICENSE) for more informations.
 
 ## 📧 Contact
 
-See my contact information on my [GitHub Profile Page](https://github.com/ArthurFiorette) or open a new issue.
+See my contact information on my [GitHub Profile Page](https://github.com/ArthurFiorette) or open a
+new issue.

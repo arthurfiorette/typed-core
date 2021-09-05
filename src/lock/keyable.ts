@@ -3,11 +3,7 @@ export class RecordLock<K extends string | symbol> {
   private records = {} as Record<K, (() => void)[]>;
 
   acquire(key: K, callback: (...args: any[]) => void, args: any[]): void;
-  acquire<R>(
-    key: K,
-    callback: (...args: any[]) => R | Promise<R>,
-    args?: any[]
-  ): Promise<R>;
+  acquire<R>(key: K, callback: (...args: any[]) => R | Promise<R>, args?: any[]): Promise<R>;
   acquire<R>(
     key: K,
     callback: (...args: any[]) => R | Promise<R> | void,

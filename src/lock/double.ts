@@ -21,11 +21,7 @@ export class DoubleLock<K extends string | symbol> {
   }
 
   hold(key: K, callback: (...args: any[]) => void, args: any[]): void;
-  hold<R>(
-    key: K,
-    callback: (...args: any[]) => R | Promise<R>,
-    args?: any[]
-  ): Promise<R>;
+  hold<R>(key: K, callback: (...args: any[]) => R | Promise<R>, args?: any[]): Promise<R>;
   hold<R>(
     key: K,
     callback: (...args: any[]) => void | R | Promise<R>,
@@ -51,11 +47,7 @@ export class DoubleLock<K extends string | symbol> {
   }
 
   release(key: K, callback: (...args: any[]) => void, args: any[]): void;
-  release<R>(
-    key: K,
-    callback: (...args: any[]) => R | Promise<R>,
-    args?: any[]
-  ): Promise<R>;
+  release<R>(key: K, callback: (...args: any[]) => R | Promise<R>, args?: any[]): Promise<R>;
   release<R>(
     key: K,
     callback: (...args: any[]) => void | R | Promise<R>,
@@ -82,10 +74,7 @@ export class DoubleLock<K extends string | symbol> {
   private async wakeUp(key: K) {
     const record = this.getRecord(key);
 
-    while (
-      record.listeners.hold.length > 0 ||
-      record.listeners.release.length > 0
-    ) {
+    while (record.listeners.hold.length > 0 || record.listeners.release.length > 0) {
       const holdOrRelease = record.hold ? 'hold' : 'release';
       const fn = record.listeners[holdOrRelease].shift();
 
