@@ -2,6 +2,11 @@
 # yarn lockfile v1
 
 
+"@arthurfiorette/prettier-config@^1.0.5":
+  version "1.0.5"
+  resolved "https://registry.yarnpkg.com/@arthurfiorette/prettier-config/-/prettier-config-1.0.5.tgz#65447a3830768907f7a3806cbc1eca7c445f98d0"
+  integrity sha512-ZVGhdM+LVt3T0IfceBlVECb6UsgFJstNBb3BtjXUv8kcVHGmxhj/PGzgBTMeS7cHQJaYQAtoB1qiKsgSc8wv1w==
+
 "@babel/cli@^7.14.8":
   version "7.14.8"
   resolved "https://registry.yarnpkg.com/@babel/cli/-/cli-7.14.8.tgz#fac73c0e2328a8af9fd3560c06b096bfa3730933"
@@ -1518,10 +1523,10 @@
   dependencies:
     "@types/unist" "*"
 
-"@types/node@*", "@types/node@^16.4.2":
-  version "16.4.2"
-  resolved "https://registry.yarnpkg.com/@types/node/-/node-16.4.2.tgz#0a95d7fd950cb1eaca0ce11031d72e8f680b775a"
-  integrity sha512-vxyhOzFCm+jC/T5KugbVsYy1DbQM0h3NCFUrVbu0+pYa/nr+heeucpqxpa8j4pUmIGLPYzboY9zIdOF0niFAjQ==
+"@types/node@*", "@types/node@^16.7.10":
+  version "16.7.10"
+  resolved "https://registry.yarnpkg.com/@types/node/-/node-16.7.10.tgz#7aa732cc47341c12a16b7d562f519c2383b6d4fc"
+  integrity sha512-S63Dlv4zIPb8x6MMTgDq5WWRJQe56iBEY0O3SOFA9JrRienkOVDXSXBjjJw6HTNQYSE2JI6GMCR6LVbIMHJVvA==
 
 "@types/normalize-package-data@^2.4.0":
   version "2.4.0"
