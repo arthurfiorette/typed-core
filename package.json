@@ -34,7 +34,7 @@
   },
   "devDependencies": {
     "@arthurfiorette/prettier-config": "^1.0.5",
-    "@babel/cli": "^7.14.8",
+    "@babel/cli": "^7.15.7",
     "@babel/core": "^7.14.8",
     "@babel/node": "^7.15.4",
     "@babel/plugin-transform-runtime": "^7.14.5",
