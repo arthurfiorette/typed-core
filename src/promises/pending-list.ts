@@ -1,4 +1,4 @@
-import { MaybePromise } from '../types';
+import type { MaybePromise } from '../types';
 import { deferred, Deferred } from './deferred';
 
 export type PendingRecord<E extends Record<string, [data: any, err: any]>> = {

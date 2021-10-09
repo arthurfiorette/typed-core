@@ -1,4 +1,4 @@
-import { Runnable } from 'src/types';
+import type { Runnable } from 'src/types';
 
 export class SingleLock {
   private locks: Runnable[] = [];

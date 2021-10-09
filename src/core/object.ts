@@ -1,4 +1,4 @@
-import { Unpacked } from '../types';
+import type { Unpacked } from '../types';
 
 /**
  * Returns a new object with the specified properties

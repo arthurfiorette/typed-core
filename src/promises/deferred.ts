@@ -1,4 +1,4 @@
-import { MaybePromise } from '../types';
+import type { MaybePromise } from '../types';
 
 export type ResolveDeferred<T = any> = (value: MaybePromise<T>) => void;
 export type RejectDeferred<E = any> = (reason: E) => void;

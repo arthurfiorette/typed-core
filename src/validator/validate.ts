@@ -1,4 +1,4 @@
-import { FieldError, ValidationFunction, ValidationRecord, VerifierRecord } from './types';
+import type { FieldError, ValidationFunction, ValidationRecord, VerifierRecord } from './types';
 
 export async function validate<T>(
   fields: T,

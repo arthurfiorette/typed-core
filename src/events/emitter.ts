@@ -1,4 +1,4 @@
-import { EmitterOptions, EventListener, EventMap, EventType } from './types';
+import type { EmitterOptions, EventListener, EventMap, EventType } from './types';
 
 function mergeOptions(options: Partial<EmitterOptions>): EmitterOptions {
   if ((options.maxListeners || 0) < 0) delete options.maxListeners;
@@ -222,16 +222,18 @@ export class EventEmitter<E extends EventType<E> = EventType<any>> {
       return this;
     }
 
-    const listeners = events[type];
+    const listenerOrArray = events[type];
 
-    if (!listeners) return this;
+    if (!listenerOrArray) {
+      return this;
+    }
 
-    if (typeof listeners === 'function') {
-      this.removeListener(type, listeners as EventListener<E[K]>);
-    } else {
-      for (let i = listeners.length - 1; i >= 0; i--) {
-        this.removeListener(type, listeners[i]);
+    if (Array.isArray(listenerOrArray)) {
+      for (const listener of listenerOrArray) {
+        this.removeListener(type, listener);
       }
+    } else {
+      this.removeListener(type, listenerOrArray);
     }
 
     return this;
