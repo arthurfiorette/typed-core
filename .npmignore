@@ -3,12 +3,13 @@
 *
 
 !README.md
-!package.json
-!.prettierrc
-!.eslintrc
+!CHANGELOG.md
+
 !.gitignore
-!.babelrc
 !LICENSE
+
+!package.json
 !tsconfig.json
-!/src/**
+
 !/dist/**
+!/src/**
