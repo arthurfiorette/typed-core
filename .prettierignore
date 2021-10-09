@@ -1,11 +1,4 @@
-# Node
 /node_modules
-
-# Compiled js code
 /dist
-
-# Generated code coverage
 /coverage
-
-# I gets weird
-tsconfig*.json
+/CHANGELOG.md

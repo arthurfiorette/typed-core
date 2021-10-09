@@ -24,7 +24,7 @@ export type BiPredicate<A = any, B = any> = (a: A, b: B) => boolean;
 export type Operator<A = any> = (a: A) => A;
 
 /**
- *Represents a supplier of results.
+ * Represents a supplier of results.
  */
 export type Supplier<A = any> = () => A;
 
