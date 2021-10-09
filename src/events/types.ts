@@ -4,6 +4,7 @@ export type EventMap<E> = {
   [K in keyof E]: undefined | EventListener<E[K]> | EventListener<E[K]>[];
 };
 
+// eslint-disable-next-line @typescript-eslint/no-empty-interface
 export interface EmptyEventType extends EventType<EmptyEventType> {}
 
 export type EventType<E = unknown> = {
