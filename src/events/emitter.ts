@@ -17,7 +17,8 @@ export class EventEmitter<E extends EventType<E> = EventType<any>> {
   }
 
   setMaxListeners(n: number): EventEmitter<E> {
-    if (n < 0 || Number.isNaN(n)) throw new Error(`n must be a non-negative number, got ${n}`);
+    if (n < 0 || Number.isNaN(n))
+      throw new Error(`n must be a non-negative number, got ${n}`);
 
     this._options.maxListeners = n;
     return this;
@@ -109,13 +110,19 @@ export class EventEmitter<E extends EventType<E> = EventType<any>> {
     return this;
   }
 
-  addListener<K extends keyof E>(type: K, listener: EventListener<E[K]>): EventEmitter<E> {
+  addListener<K extends keyof E>(
+    type: K,
+    listener: EventListener<E[K]>
+  ): EventEmitter<E> {
     return this._addListener(type, listener, false);
   }
 
   on = this.addListener;
 
-  prependListener<K extends keyof E>(type: K, listener: EventListener<E[K]>): EventEmitter<E> {
+  prependListener<K extends keyof E>(
+    type: K,
+    listener: EventListener<E[K]>
+  ): EventEmitter<E> {
     return this._addListener(type, listener, true);
   }
 
@@ -145,11 +152,17 @@ export class EventEmitter<E extends EventType<E> = EventType<any>> {
     return new Promise((res) => this.once(type, (val) => res(val)));
   }
 
-  prependOnceListener<K extends keyof E>(type: K, listener: EventListener<E[K]>): EventEmitter<E> {
+  prependOnceListener<K extends keyof E>(
+    type: K,
+    listener: EventListener<E[K]>
+  ): EventEmitter<E> {
     return this.prependListener(type, this._onceWrapper(type, listener));
   }
 
-  removeListener<K extends keyof E>(type: K, listener: EventListener<E[K]>): EventEmitter<E> {
+  removeListener<K extends keyof E>(
+    type: K,
+    listener: EventListener<E[K]>
+  ): EventEmitter<E> {
     const events = this._events;
 
     const list = events[type];
