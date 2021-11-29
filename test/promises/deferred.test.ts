@@ -1,4 +1,4 @@
-import { deferred } from '../../src/promises/deferred';
+import { deferred } from '../../src';
 
 describe('Tests deferred', () => {
   it('test resolve method', () => {
