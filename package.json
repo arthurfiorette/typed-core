@@ -27,6 +27,9 @@
     "url": "https://github.com/ArthurFiorette/typed-core/issues"
   },
   "homepage": "https://github.com/ArthurFiorette/typed-core#readme",
+  "dependencies": {
+    "tslib": "^2.3.1"
+  },
   "devDependencies": {
     "@arthurfiorette/prettier-config": "^1.0.7",
     "@types/jest": "^27.0.3",
