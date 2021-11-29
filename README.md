@@ -24,7 +24,7 @@
       alt="License"
   /></a>
   <a href="https://codecov.io/gh/arthurfiorette/typed-core"
-    ><img src="https://codecov.io/gh/arthurfiorette/typed-core/branch/main/graph/badge.svg" target="_blank" alt="Codecov"
+    ><img src="https://codecov.io/gh/arthurfiorette/typed-core/branch/main/graph/badge.svg?style=flat-square" target="_blank" alt="CodeCov"
   /></a>
   <a href="https://www.npmjs.com/package/typed-core"
     ><img
@@ -41,33 +41,65 @@
   <i>An <b>utility</b> package for Typescript.</i>
 </p>
 
+<br />
+
+## 🗂️ Table of Contents
+
+- [🗂️ Table of Contents](#️-table-of-contents)
+- [📖 About](#-about)
+- [⬇️ Downloading](#️-downloading)
+- [📃 Documentation](#-documentation)
+- [💻 Contributing](#-contributing)
+- [📃 License](#-license)
+- [📧 Contact](#-contact)
+
+<br />
+
 ## 📖 About
 
-This is an type focused library for Node and Typescript. More docs will be added later.
+This is an type focused library for Node and Typescript.
+
+<br />
 
 ## ⬇️ Downloading
 
-This project is a Node module, so you can install it with **Npm** or **Yarn**:
+You can install it with **Npm** or **Yarn**:
 
 ```sh
 npm i --save typed-core
 ```
 
 ```sh
-npm i --save typed-core
+yarn add typed-core
 ```
+
+<br />
+
+## 📃 Documentation
+
+This package is pretty small. So i do not have any soon plans to create a specific
+documentation for it. But don't worry, i'm adding inline comments to the source code and
+jsdoc.
+
+<br />
 
 ## 💻 Contributing
 
-This is a small project, and I don't have any specific rules for contributions, you can
+Right now, I don't have any specific rules for contributions, you can
 modify anything, then make a pull-request and i'll analyze. Just be careful not to run
 away from the main idea of the package.
+
+<br />
 
 ## 📃 License
 
 Licensed under the **MIT**. See [`LICENSE`](LICENSE) for more informations.
 
+<br />
+
 ## 📧 Contact
 
 See my contact information on my [GitHub Profile Page](https://github.com/ArthurFiorette)
 or open a new issue.
+
+<br />
