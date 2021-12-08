@@ -85,9 +85,9 @@ jsdoc.
 
 ## 💻 Contributing
 
-Right now, I don't have any specific rules for contributions, you can
-modify anything, then make a pull-request and i'll analyze. Just be careful not to run
-away from the main idea of the package.
+Right now, I don't have any specific rules for contributions, you can modify anything,
+then make a pull-request and i'll analyze. Just be careful not to run away from the main
+idea of the package.
 
 <br />
 

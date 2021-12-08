@@ -1,11 +1,11 @@
+import { deferred, Deferred } from 'fast-defer';
 import type { MaybePromise } from '../types';
-import { deferred, Deferred } from './deferred';
 
 /** A simple HashMap-like class that maps keys to unresolved promises. */
-export class PendingList<E extends Record<string, [data: any, err: any]>> {
-  private readonly entries: { [K in keyof E]?: Deferred<E[K][0], E[K][1]> } = {};
+export class PendingList<E extends Record<string, unknown>> {
+  private readonly entries: { [K in keyof E]?: Deferred<E[K]> } = {};
 
-  public readonly get = <K extends keyof E>(key: K): Deferred<E[K][0], E[K][1]> => {
+  public readonly get = <K extends keyof E>(key: K): Deferred<E[K]> => {
     return this.entries[key] || (this.entries[key] = deferred());
   };
 
@@ -31,7 +31,7 @@ export class PendingList<E extends Record<string, [data: any, err: any]>> {
    */
   public readonly resolve = <K extends keyof E>(
     key: K,
-    value: MaybePromise<E[K][0]>
+    value: MaybePromise<E[K]>
   ): this => {
     this.get(key).resolve(value);
     return this;
@@ -47,7 +47,7 @@ export class PendingList<E extends Record<string, [data: any, err: any]>> {
    * @param err The value to reject the deferred
    * @returns This pending list to method chaining
    */
-  public readonly reject = <K extends keyof E>(key: K, err: E[K][1]): this => {
+  public readonly reject = <K extends keyof E>(key: K, err: E[K]): this => {
     this.get(key).reject(err);
     return this;
   };

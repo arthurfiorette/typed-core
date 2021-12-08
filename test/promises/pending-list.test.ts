@@ -1,7 +1,7 @@
 import { PendingList } from '../../src';
 
 const KEY = 'key';
-type List = Record<typeof KEY, [number, number]>;
+type List = Record<typeof KEY, number>;
 
 describe('tests pending lists', () => {
   it('tests resolve', () => {
