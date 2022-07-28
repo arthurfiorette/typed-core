@@ -846,10 +846,10 @@
   dependencies:
     "@types/unist" "*"
 
-"@types/node@*", "@types/node@^16.11.12":
-  version "16.11.12"
-  resolved "https://registry.yarnpkg.com/@types/node/-/node-16.11.12.tgz#ac7fb693ac587ee182c3780c26eb65546a1a3c10"
-  integrity sha512-+2Iggwg7PxoO5Kyhvsq9VarmPbIelXP070HMImEpbtGCoyWNINQj4wzjbQCXzdHTRXnqufutJb5KAURZANNBAw==
+"@types/node@*", "@types/node@^18.6.2":
+  version "18.6.2"
+  resolved "https://registry.yarnpkg.com/@types/node/-/node-18.6.2.tgz#ffc5f0f099d27887c8d9067b54e55090fcd54126"
+  integrity sha512-KcfkBq9H4PI6Vpu5B/KoPeuVDAbmi+2mDBqGPGUgoL7yXQtcWGu2vJWmmRkneWK3Rh0nIAX192Aa87AqKHYChQ==
 
 "@types/prettier@*", "@types/prettier@^2.1.5":
   version "2.4.1"
